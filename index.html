@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La red de recarga eléctrica llega a toda Cataluña, pero no por igual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fondo: #F4F7F6;
+    --superficie: #FFFFFF;
+    --tinta: #1C2430;
+    --suave: #56606B;
+    --linea: #D3DBDA;
+    --acento: #0F6B5C;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #141A20;
+      --superficie: #F4F7F6;
+      --tinta: #E6ECEB;
+      --suave: #A7B3B1;
+      --linea: #2E3A40;
+      --acento: #6FC2B0;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--tinta);
+    font-family: "Public Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  main { max-width: 980px; margin: 0 auto; padding: 48px 24px 64px; }
+  h1 {
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: clamp(20px, 4.2vw, 30px);
+    line-height: 1.2;
+    margin: 0 0 16px;
+  }
+  .entradilla, .lectura p, figcaption, footer {
+    text-align: justify;
+    hyphens: auto;
+  }
+  .entradilla { color: var(--suave); margin: 0 0 32px; }
+  figure { margin: 0; }
+  .lienzo {
+    background: var(--superficie);
+    border: 1px solid var(--linea);
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+  }
+  .lienzo img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+  figcaption { color: var(--suave); font-size: 15px; margin-top: 12px; }
+  h2 { font-size: 20px; margin: 40px 0 8px; }
+  .lectura p { margin: 0 0 12px; }
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--linea);
+    color: var(--suave);
+    font-size: 15px;
+  }
+  footer p { margin: 0; }
+  .fuente { font-style: italic; }
+  .autoria { text-align: center; margin-top: 32px; }
+  a { color: var(--acento); }
+  a:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Zona que ocupan las estaciones de recarga de coches eléctricos en cada provincia de Cataluña</h1>
+
+  <figure>
+    <div class="lienzo">
+      <img src="convex-hall.svg" alt="Diagrama de dispersión de las estaciones de recarga de Cataluña por longitud y latitud, con un casco convexo por provincia. El casco de Lleida es el más grande aunque tiene solo 176 estaciones; la provincia de Barcelona concentra el 63 % de las estaciones en el área metropolitana, y su casco se solapa con el de Girona.">
+    </div>
+    <figcaption>Técnica: casco convexo (convex hull). Gráfico hecho con RAWGraphs.</figcaption>
+  </figure>
+
+
+  <footer>
+    <p class="fuente">Fuente: Generalitat de Catalunya, Dades Obertes. Estacions de recàrrega per a vehicle elèctric a Catalunya (consultado el 22/10/2026).</p>
+    <p class="autoria">PEC 2, Visualización de Datos. Máster en Ciencia de Datos (UOC). Autora: Paula Pérez Monge.</p>
+  </footer>
+</main>
+</body>
+</html>
