@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>La red de recarga eléctrica llega a toda Cataluña, pero no por igual</title>
+<title>Estaciones de recarga semirrápida, rápida y superrápida para vehículo eléctrico en Cataluña: zona que ocupan en cada provincia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
   main { max-width: 980px; margin: 0 auto; padding: 48px 24px 64px; }
   h1 {
     font-family: "Libre Baskerville", Georgia, serif;
-    font-size: clamp(20px, 4.2vw, 30px);
+    font-size: clamp(28px, 4.2vw, 42px);
     line-height: 1.2;
     margin: 0 0 16px;
   }
@@ -77,19 +77,25 @@
 </head>
 <body>
 <main>
-  <h1>Zona que ocupan las estaciones de recarga de coches eléctricos en cada provincia de Cataluña</h1>
+  <h1>Estaciones de recarga semirrápida, rápida y superrápida para vehículo eléctrico en Cataluña: zona que ocupan en cada provincia</h1>
+  <p class="entradilla">Cada punto es una de las 2.340 estaciones de recarga semirrápida (22 kW), rápida (50 kW) y superrápida (más de 50 kW) para vehículo eléctrico, situada por su longitud y su latitud. Cada polígono es el casco convexo de una provincia: la figura convexa más pequeña que rodea todas sus estaciones.</p>
 
   <figure>
     <div class="lienzo">
-      <img src="convex-hall.svg" alt="Diagrama de dispersión de las estaciones de recarga de Cataluña por longitud y latitud, con un casco convexo por provincia. El casco de Lleida es el más grande aunque tiene solo 176 estaciones; la provincia de Barcelona concentra el 63 % de las estaciones en el área metropolitana, y su casco se solapa con el de Girona.">
+      <img src="casco-convexo.svg" alt="Diagrama de dispersión de las estaciones de recarga semirrápida, rápida y superrápida de Cataluña por longitud y latitud, con un casco convexo por provincia. El casco de Lleida es el más grande aunque tiene solo 176 estaciones; la provincia de Barcelona concentra el 63 % de las estaciones en el área metropolitana, y su casco se solapa con el de Girona.">
     </div>
     <figcaption>Técnica: casco convexo (convex hull). Gráfico hecho con RAWGraphs.</figcaption>
   </figure>
 
+  <section class="lectura">
+    <h2>Cómo leerlo</h2>
+    <p>La provincia de Barcelona reúne el 63 % de las estaciones, pero el casco más grande es el de Lleida, con solo 176: el polígono muestra hasta dónde llega la red, no cuántas estaciones hay dentro.</p>
+    <p>Los cascos de Barcelona y Girona se solapan porque la frontera real entre provincias no es convexa: el casco rellena los entrantes.</p>
+  </section>
 
   <footer>
     <p class="fuente">Fuente: Generalitat de Catalunya, Dades Obertes. Estacions de recàrrega per a vehicle elèctric a Catalunya (consultado el 22/10/2026).</p>
-    <p class="autoria">PEC 2, Visualización de Datos. Máster en Ciencia de Datos (UOC). Autora: Paula Pérez Monge.</p>
+    <p class="autoria">PEC 2, Visualización de Datos. Máster Universitario en Ciencia de Datos (UOC). Autora: Paula Pérez Monge.</p>
   </footer>
 </main>
 </body>
