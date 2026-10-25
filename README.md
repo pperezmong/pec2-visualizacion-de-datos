@@ -13,4 +13,6 @@ La provincia de Barcelona reúne el 63 % de las estaciones, pero el casco más g
 
 ---
  
-PEC 2, Visualización de Datos. Máster Universitario en Ciencia de Datos (UOC). Autora: Paula Pérez Monge.
+PEC 2, Visualización de Datos. Máster Universitario en Ciencia de Datos (UOC).
+
+Autora: Paula Pérez Monge.
