@@ -6,7 +6,7 @@ Visualización con la técnica de **casco convexo** (*convex hull*), realizada p
  
 ## Qué muestra
  
-Cada punto es una de las 2.340 estaciones de recarga semirrápida (22 kW), rápida (50 kW) y superrápida (más de 50 kW) para vehículo eléctrico de Cataluña, situada por su longitud y su latitud. Cada polígono de color es el casco convexo de una provincia: la figura convexa más pequeña que rodea todas sus estaciones.
+Cada punto es una de las 2.340 estaciones de recarga semirrápida (22 kW), rápida (50 kW) y superrápida (más de 50 kW) para vehículo eléctrico de Cataluña, situada por su longitud y su latitud. Cada polígono de color es el casco convexo de una provincia.
  
 La provincia de Barcelona reúne el 63 % de las estaciones, pero el casco más grande es el de Lleida, con solo 176. El casco muestra hasta dónde llega la red, no cuántas estaciones hay dentro. Además, los cascos de Barcelona y Girona se solapan porque la frontera real entre provincias no es convexa.
 
